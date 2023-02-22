@@ -1,7 +1,7 @@
 @font-face {
   font-family: "iconfont";
   /* Project id 3898473 */
-  src: url('//at.alicdn.com/t/c/font_3898473_5fmtcyg2qof.woff2?t=1676562831399') format('woff2'), url('//at.alicdn.com/t/c/font_3898473_5fmtcyg2qof.woff?t=1676562831399') format('woff'), url('//at.alicdn.com/t/c/font_3898473_5fmtcyg2qof.ttf?t=1676562831399') format('truetype');
+  src: url('//at.alicdn.com/t/c/font_3898473_wc796rsp0ol.woff2?t=1676647556229') format('woff2'), url('//at.alicdn.com/t/c/font_3898473_wc796rsp0ol.woff?t=1676647556229') format('woff'), url('//at.alicdn.com/t/c/font_3898473_wc796rsp0ol.ttf?t=1676647556229') format('truetype');
 }
 .iconfont {
   font-family: "iconfont" !important;
@@ -9,6 +9,18 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon-shouye:before {
+  content: "\e6cb";
+}
+.icon-wenda:before {
+  content: "\e893";
+}
+.icon-wode:before {
+  content: "\e62f";
+}
+.icon-video:before {
+  content: "\e61f";
 }
 .icon-suo:before {
   content: "\e652";
@@ -55,14 +67,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 45px;
 }
 * body {
   background-color: #E2E4E6;
-}
-input::-webkit-input-placeholder {
-  /* placeholder颜色 */
-  color: #aab2bd !important;
-  /* placeholder字体大小 */
-  font-size: 12px !important;
 }

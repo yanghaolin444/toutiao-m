@@ -7,7 +7,7 @@
             <component :is="ComName"></component>
         </keep-alive>
         <span class="span" @click="re">{{ value }}</span>
-</div>
+    </div>
 </template>
 
 <script>
@@ -19,11 +19,6 @@ import re from '@/components/login/re.vue'
 export default {
   data () {
     return {
-
-      user: {
-        mobile: '', // 手机号
-        code: '' // 验证码
-      },
       value: '点击注册',
       ComName: 'user'
     }
@@ -33,19 +28,7 @@ export default {
     re
   },
   methods: {
-    // async submit(values) {
-    //     try{
-    //          const res = await getCode({mobile : values.mobile})
 
-    //     }catch(err){
-    //         // console.log(err)
-    //     }
-
-    // },
-    // chang(){
-    //     this.islogin = false
-    //     console.log(this.islogin)
-    // }
     re () {
       if (this.ComName === 'user') {
         this.ComName = 're'
@@ -171,5 +154,15 @@ export default {
     cursor: pointer;
     background-color: #fff;
     font-size: 30px;
+}
+
+.van-field__control {
+    color: #aab2bd !important;
+    /* placeholder字体大小 */
+    font-size: 30px !important;
+}
+
+i {
+    display: block;
 }
 </style>
