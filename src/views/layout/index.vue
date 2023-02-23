@@ -9,7 +9,7 @@
       route: 开启路由模式
      -->
     <van-tabbar class="layout-tabbar" route>
-      <van-tabbar-item to="/home">
+      <van-tabbar-item to='/home'>
         <i slot="icon" class="iconfont icon-shouye"></i>
         <span class="text">首页</span>
       </van-tabbar-item>
@@ -41,7 +41,9 @@ export default {
   },
   computed: {},
   watch: {},
-  created () {},
+  created () {
+    this.$router.push({ name: 'home' })
+  },
   mounted () {},
   methods: {}
 }

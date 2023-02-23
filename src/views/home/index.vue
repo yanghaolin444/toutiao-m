@@ -2,7 +2,16 @@
   <div class="home-container">
     <!-- 导航栏 -->
     <van-nav-bar class="page-nav-bar">
-      <van-button class="search-btn" slot="title" type="info" size="small" round icon="search">搜索</van-button>
+      <van-button
+        class="search-btn"
+        slot="title"
+        type="info"
+        size="small"
+        round
+        icon="search"
+        to="search"
+        >搜索</van-button
+      >
     </van-nav-bar>
     <!-- /导航栏 -->
 
@@ -14,8 +23,21 @@
      -->
     <van-tabs class="channel-tabs" swipeable>
       <van-tab title="推荐">
-        <van-cell class="article-item">
-          <div slot="title" class="title van-multi-ellipsis--l2">千山万水、依山傍水、青山绿水、 </div>
+        <van-cell
+          class="article-item"
+          :to="{
+            // 根据路由名称进行跳转
+            name: 'article',
+            // 传递路由动态参数
+            params: {
+              // 属性名：路由路径中设计的动态参数名称
+              articleId: 0,
+            },
+          }"
+        >
+          <div slot="title" class="title van-multi-ellipsis--l2">
+            千山万水、依山傍水、青山绿水、
+          </div>
           <div slot="label">
             <div class="cover-wrap">
               <div class="cover-item">
@@ -29,9 +51,21 @@
             </div>
           </div>
         </van-cell>
-        <van-cell class="article-item">
+        <van-cell
+          class="article-item"
+          :to="{
+            // 根据路由名称进行跳转
+            name: 'article',
+            // 传递路由动态参数
+            params: {
+              // 属性名：路由路径中设计的动态参数名称
+              articleId: 0,
+            },
+          }"
+        >
           <div slot="title" class="title van-multi-ellipsis--l2">
-            奇山异水、高山流水、跋山涉水、 </div>
+            奇山异水、高山流水、跋山涉水、
+          </div>
           <div slot="label">
             <div class="cover-wrap">
               <div class="cover-item">
@@ -45,8 +79,21 @@
             </div>
           </div>
         </van-cell>
-        <van-cell class="article-item">
-          <div slot="title" class="title van-multi-ellipsis--l2">山高水远、山光水色、山清水秀、 </div>
+        <van-cell
+          class="article-item"
+          :to="{
+            // 根据路由名称进行跳转
+            name: 'article',
+            // 传递路由动态参数
+            params: {
+              // 属性名：路由路径中设计的动态参数名称
+              articleId: 0,
+            },
+          }"
+        >
+          <div slot="title" class="title van-multi-ellipsis--l2">
+            山高水远、山光水色、山清水秀、
+          </div>
           <div slot="label">
             <div class="cover-wrap">
               <div class="cover-item">
@@ -60,8 +107,21 @@
             </div>
           </div>
         </van-cell>
-        <van-cell class="article-item">
-          <div slot="title" class="title van-multi-ellipsis--l2">山穷水尽、山重水复、山高水长。 </div>
+        <van-cell
+          class="article-item"
+          :to="{
+            // 根据路由名称进行跳转
+            name: 'article',
+            // 传递路由动态参数
+            params: {
+              // 属性名：路由路径中设计的动态参数名称
+              articleId: 0,
+            },
+          }"
+        >
+          <div slot="title" class="title van-multi-ellipsis--l2">
+            山穷水尽、山重水复、山高水长。
+          </div>
           <div slot="label">
             <div class="cover-wrap">
               <div class="cover-item">
@@ -75,8 +135,21 @@
             </div>
           </div>
         </van-cell>
-        <van-cell class="article-item">
-          <div slot="title" class="title van-multi-ellipsis--l2">崇山峻岭、连绵起伏、千山一碧、 </div>
+        <van-cell
+          class="article-item"
+          :to="{
+            // 根据路由名称进行跳转
+            name: 'article',
+            // 传递路由动态参数
+            params: {
+              // 属性名：路由路径中设计的动态参数名称
+              articleId: 0,
+            },
+          }"
+        >
+          <div slot="title" class="title van-multi-ellipsis--l2">
+            崇山峻岭、连绵起伏、千山一碧、
+          </div>
           <div slot="label">
             <div class="cover-wrap">
               <div class="cover-item">
@@ -90,8 +163,21 @@
             </div>
           </div>
         </van-cell>
-        <van-cell class="article-item">
-          <div slot="title" class="title van-multi-ellipsis--l2">悬崖峭壁、孤峰突起、千峰万仞。 </div>
+        <van-cell
+          class="article-item"
+          :to="{
+            // 根据路由名称进行跳转
+            name: 'article',
+            // 传递路由动态参数
+            params: {
+              // 属性名：路由路径中设计的动态参数名称
+              articleId: 0,
+            },
+          }"
+        >
+          <div slot="title" class="title van-multi-ellipsis--l2">
+            悬崖峭壁、孤峰突起、千峰万仞。
+          </div>
           <div slot="label">
             <div class="cover-wrap">
               <div class="cover-item">
@@ -105,8 +191,21 @@
             </div>
           </div>
         </van-cell>
-        <van-cell class="article-item">
-          <div slot="title" class="title van-multi-ellipsis--l2">风平浪静、水平如镜、碧波荡漾、</div>
+        <van-cell
+          class="article-item"
+          :to="{
+            // 根据路由名称进行跳转
+            name: 'article',
+            // 传递路由动态参数
+            params: {
+              // 属性名：路由路径中设计的动态参数名称
+              articleId: 0,
+            },
+          }"
+        >
+          <div slot="title" class="title van-multi-ellipsis--l2">
+            风平浪静、水平如镜、碧波荡漾、
+          </div>
           <div slot="label">
             <div class="cover-wrap">
               <div class="cover-item">
@@ -120,8 +219,21 @@
             </div>
           </div>
         </van-cell>
-        <van-cell class="article-item">
-          <div slot="title" class="title van-multi-ellipsis--l2">微波粼粼、汹涌澎湃、惊涛骇浪。</div>
+        <van-cell
+          class="article-item"
+          :to="{
+            // 根据路由名称进行跳转
+            name: 'article',
+            // 传递路由动态参数
+            params: {
+              // 属性名：路由路径中设计的动态参数名称
+              articleId: 0,
+            },
+          }"
+        >
+          <div slot="title" class="title van-multi-ellipsis--l2">
+            微波粼粼、汹涌澎湃、惊涛骇浪。
+          </div>
           <div slot="label">
             <div class="cover-wrap">
               <div class="cover-item">
@@ -136,22 +248,39 @@
           </div>
         </van-cell>
       </van-tab>
-      <van-tab :title="channel.name" v-for="(channel, index) in channels" :key="index">
+      <van-tab
+        :title="channel.name"
+        v-for="(channel, index) in channels"
+        :key="index"
+      >
         <!-- 文章列表 -->
         <article-list ref="article-list" :channel="channel" />
         <!-- 文章列表 -->
       </van-tab>
       <div slot="nav-right" class="placeholder"></div>
-      <div slot="nav-right" class="hamburger-btn" @click="isChennelEditShow = true">
-        <i class="iconfont  icon-fenlei"></i>
+      <div
+        slot="nav-right"
+        class="hamburger-btn"
+        @click="isChennelEditShow = true"
+      >
+        <i class="iconfont icon-fenlei"></i>
       </div>
     </van-tabs>
     <!-- /频道列表 -->
 
     <!-- 频道编辑弹出层 -->
-    <van-popup v-model="isChennelEditShow" closeable close-icon-position="top-left" position="bottom"
-      :style="{ height: '100%' }">
-      <channel-edit :my-channels="channels" :active="active" @update-active="onUpdateActive" />
+    <van-popup
+      v-model="isChennelEditShow"
+      closeable
+      close-icon-position="top-left"
+      position="bottom"
+      :style="{ height: '100%' }"
+    >
+      <channel-edit
+        :my-channels="channels"
+        :active="active"
+        @update-active="onUpdateActive"
+      />
     </van-popup>
     <!-- /频道编辑弹出层 -->
   </div>
@@ -200,33 +329,31 @@ export default {
           id: 1,
           name: 'C#',
           list: []
-        }, {
+        },
+        {
           id: 2,
           name: 'java',
           list: []
-
-        }, {
+        },
+        {
           id: 3,
           name: 'phthon',
           list: []
-
-        }, {
+        },
+        {
           id: 4,
           name: 'php',
           list: []
-
         },
         {
           id: 5,
           name: 'javascript',
           list: []
-
         },
         {
           id: 6,
           name: 'node.js',
           list: []
-
         }
       ], // 频道列表
       isChennelEditShow: false // 控制编辑频道弹出层的显示状态
@@ -241,17 +368,14 @@ export default {
     this.channels.forEach((item, index) => {
       this.channels[index].list = this.$store.state.list
     })
-    console.log(this.channels)
   },
-  mounted () {
-  },
+  mounted () {},
   methods: {
     async loadChannels () {
-    //   try {
-    //     // const { data } = await getUserChannels()
-    //     // this.channels = data.data.channels
-    //     let channels = []
-
+      //   try {
+      //     // const { data } = await getUserChannels()
+      //     // this.channels = data.data.channels
+      //     let channels = []
       //     if (this.user) {
       //       // 已登录，请求获取用户频道列表
       //       const { data } = await getUserChannels()
@@ -268,20 +392,18 @@ export default {
       //         channels = data.data.channels
       //       }
       //     }
-
       //     this.channels = channels
       //   } catch (err) {
       //     this.$toast('获取频道数据失败')
       //   }
       // },
-
       // onUpdateActive (index, isChennelEditShow = true) {
       //   // 更新激活的频道项
       //   this.active = index
-
-    //   // 关闭编辑频道弹层
-    //   this.isChennelEditShow = isChennelEditShow
-    }
+      //   // 关闭编辑频道弹层
+      //   this.isChennelEditShow = isChennelEditShow
+    },
+    onUpdateActive () {}
   }
 }
 </script>
@@ -292,10 +414,6 @@ export default {
 }
 
 .home-container {
-  .van-nav-bar__title {
-    max-width: unset;
-  }
-
   .search-btn {
     width: 440px;
     height: 64px;
@@ -413,5 +531,17 @@ export default {
       }
     }
   }
+}
+.van-tab__pane {
+  position: fixed;
+  top: 180px;
+  bottom: 100px;
+  overflow-y: auto;
+  right: 0;
+  left: 0;
+}
+.van-nav-bar__title {
+  margin: 0;
+  max-width: unset;
 }
 </style>

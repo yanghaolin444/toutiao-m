@@ -70,7 +70,6 @@ export default {
     // })
     this.channel.list.forEach((item, index) => {
       this.list[index] = item
-      console.log(item)
     })
     this.loading = false
     this.finished = true

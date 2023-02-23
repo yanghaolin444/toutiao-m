@@ -5,10 +5,11 @@ import store from './store'
 import '@/style/index.less'
 import 'vant/lib/index.css'
 import 'amfe-flexible'
-import { Button, Toast, Form, Field, NavBar, Tabbar, TabbarItem, Grid, GridItem, Cell, Image, Dialog, Tab, Tabs, List, PullRefresh, Popup, Icon } from 'vant'
-
 import './api/dayjs'
 
+import { Button, Toast, Form, Field, NavBar, Tabbar, TabbarItem, Grid, GridItem, Cell, Image, Dialog, Tab, Tabs, List, PullRefresh, Popup, Icon, Search } from 'vant'
+
+Vue.use(Search)
 Vue.use(Icon)
 Vue.use(Popup)
 Vue.use(PullRefresh)

@@ -12,7 +12,6 @@ const routes = [
   },
   {
     path: '/',
-    // name:'home',
     component: () => import('@/views/layout'),
     children: [
       {
@@ -36,6 +35,16 @@ const routes = [
         component: () => import('@/views/my')
       }
     ]
+  },
+  {
+    path: '/search',
+    component: () => import('@/views/home/components/search')
+  },
+  {
+    path: '/article/:articleId',
+    name: 'article',
+    component: () => import('@/views/article'),
+    props: true // 开启 Props 传参，说白了就是把路由参数映射到组件的 props 数据中
   }
 ]
 
